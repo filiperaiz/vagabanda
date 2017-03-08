@@ -13,8 +13,8 @@ whatsapp: (86) 99970-7297
 
 
 description: Site da banda VagabandaThe
-baseurl: "/vagabanda" # the subpath of your site, e.g. /blog
-url: "https://vagabandathe.github.io/" # the base hostname & protocol for your site
+baseurl: "/vagabanda/" # the subpath of your site, e.g. /blog
+url: "https://filiperaiz.github.io" # the base hostname & protocol for your site
 
 
 # Build settings

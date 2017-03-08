@@ -1,6 +1,6 @@
 var image = new Array ();
-image[0] = "../img/banda.jpg";
-image[1] = "../img/banda1.jpg";
+image[0] = "img/banda.jpg";
+image[1] = "img/banda1.jpg";
 var size = image.length
 var x = Math.floor(size*Math.random())
 ''
