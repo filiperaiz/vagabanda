@@ -1,0 +1,378 @@
+.full-picture {
+    background-color: #000;
+    position: relative;
+    padding: 10px 0;
+    .box-band {
+        position: relative;
+        text-align: center;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            -moz-box-shadow: rgba(0, 0, 0, 1) 3px 3px 10px inset;
+            -webkit-box-shadow: rgba(0, 0, 0, 1) 3px 3px 10px inset;
+            box-shadow: rgba(0, 0, 0, 1) 3px 3px 10px inset;
+        }
+        .pic-band {
+            position: relative;
+        }
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        height: 70px;
+        width: 100%;
+        background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1) 0%, transparent 100%);
+
+    }
+}
+
+.section-block {
+    padding: 75px 0;
+    &.white {
+        background-color: #fff;
+    }
+    &.black {
+        background-color: #000;
+        // padding: 50px 0;
+    }
+    &.team {
+        background-color: #444444;
+        background-image: url("https://www.transparenttextures.com/patterns/debut-light.png");
+        padding: 60px 0;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            height: 50px;
+            width: 100%;
+            background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+            background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+            background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, transparent 100%);
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+            background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+            background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+            background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1) 0%, transparent 100%);
+        }
+    }
+}
+
+.about {
+    text-align: center;
+    p {
+        color: #fff;
+        font-size: 1.4em;
+        line-height: 1.4;
+        margin-bottom: 0;
+    }
+}
+
+.band {
+    img {
+        width: 100%;
+    }
+}
+
+.team {
+    text-align: left;
+    padding-top: 25%;
+    ul {
+        margin: 0;
+        li {
+            display: block;
+            color: #cacaca;
+            font-size: 1.2em;
+            span {
+                font-weight: bold;
+                color: #ffffff;
+                font-size: 1.4em;
+                ;
+            }
+        }
+    }
+}
+
+.agenda {
+    h2 {
+        color: #fff;
+        margin-bottom: 30px;
+        font-size: 1.6em;
+    }
+    .list-shows {
+        margin: 0;
+        .item {
+            display: block;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #252525;
+            padding-bottom: 10px;
+
+            .date {
+                float: left;
+                background-color: #ffffff;
+                width: 70px;
+                height: 70px;
+                text-align: center;
+                padding-top: 2px;
+
+                .day {
+                    display: block;
+                    font-size: 1.6em;
+                    font-weight: bold;
+                }
+                .month {
+                    display: block;
+                    color: #808080;
+
+                }
+            }
+            .infos {
+                float: left;
+                padding-top: 10px;
+                padding-left: 20px;
+                p {
+                    color: #999;
+                    margin-bottom: 0;
+                }
+                .hour {
+                    color: #ffffff;
+                    font-weight: bold;
+                    margin-left: 10px;
+
+                }
+                .local {
+                    color: #ffffff;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    margin-left: 10px;
+
+                }
+            }
+        }
+    }
+}
+
+.video {
+    h2 {
+        color: #fff;
+        margin-bottom: 30px;
+        font-size: 1.6em;
+    }
+}
+
+#contact {
+    padding-bottom: 0;
+}
+
+.contact-box {
+    h2 {
+        color: #fff;
+        margin-bottom: 30px;
+        font-size: 1.6em;
+    }
+    ul {
+        margin: 0;
+        li {
+            display: block;
+            margin-bottom: 30px;
+            ;
+            p {
+                margin-bottom: 0;
+                color: #fff;
+                font-size: 1.4em;
+            }
+            img {
+                margin-right: 10px;
+            }
+            a {
+                color: #fff;
+                font-size: 1.4em;
+                display: block;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) and (orientation: portrait){
+    .about {
+        p {
+            font-size: 1.2em;
+            line-height: 1.4;
+        }
+    }
+
+    .team {
+        padding-top: 10%;
+        ul {
+            li {
+                font-size: 1.1em;
+            }
+        }
+    }
+
+    .agenda {
+        h2 {
+            font-size: 1.3em;
+        }
+        .list-shows {
+            .item {
+                .date {
+                    width: 60px;
+                    height: 60px;
+
+                    .day {
+                        font-size: 1.3em;
+                    }
+                    .month {
+                        font-size: .8em;
+                    }
+                }
+
+                .infos {
+                    padding-top: 4px;
+                    padding-left: 10px;
+                    p {
+                        font-size: 0.9em;
+                    }
+                    .hour {
+                        font-size: 1.1em;
+                    }
+                    .local {
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+    }
+
+    .video {
+        h2 {
+            font-size: 1.3em;
+        }
+    }
+
+    .contact-box {
+        h2 {
+            font-size: 1.3em;
+        }
+        ul {
+            li {
+                margin-bottom: 30px;
+                ;
+                p {
+                    font-size: 1.1em;
+                }
+                img {
+                    margin-right: 10px;
+                    width: 40px;
+                }
+                a {
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section-block {
+        padding: 15px 0;
+    }
+    .about {
+        p {
+            font-size: .9em;
+        }
+    }
+
+    .team {
+        padding-top: 5%;
+        ul {
+            li {
+                font-size: .9em;
+                text-align: center;
+            }
+        }
+    }
+
+    .agenda {
+        margin-bottom: 40px;
+        h2 {
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .list-shows {
+            .item {
+                .date {
+                    width: 60px;
+                    height: 60px;
+
+                    .day {
+                        font-size: 1.2em;
+                    }
+                    .month {
+                        font-size: .8em;
+                    }
+                }
+
+                .infos {
+                    padding-top: 6px;
+                    padding-left: 10px;
+                    p {
+                        font-size: 0.9em;
+                    }
+                    .hour {
+                        font-size: 1em;
+                    }
+                    .local {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+
+    .video {
+        h2 {
+            font-size: 1.2em;
+            text-align: center;
+        }
+    }
+
+    .contact-box {
+        margin-bottom: 40px;
+        h2 {
+            font-size: 1.2em;
+            text-align: center;
+        }
+        ul {
+            li {
+                margin-bottom: 20px;
+                ;
+                p {
+                    font-size: 1em;
+                }
+                img {
+                    margin-right: 10px;
+                    width: 30px;
+                }
+                a {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
